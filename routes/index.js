@@ -6,6 +6,10 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Index' });
 });
 
+/* GET template page. */
+router.get('/template', function(req, res) {
+  res.render('template', { title: 'Template' });
+});
 
 /* GET test page. */
 router.get('/quicklinks', function(req, res) {
