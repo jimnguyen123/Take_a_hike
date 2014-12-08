@@ -6,20 +6,6 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Index' });
 });
 
-/* GET giving page. */
-router.get('/giving', function(req, res) {
-  res.render('giving', { title: 'Giving' });
-});
-
-/* GET about page. */
-router.get('/resources', function(req, res) {
-  res.render('resources', { title: 'Resources' });
-});
-
-/* GET contact page. */
-router.get('/contact', function(req, res) {
-  res.render('contact', { title: 'Contact' });
-});
 
 /* GET test page. */
 router.get('/quicklinks', function(req, res) {
@@ -31,19 +17,19 @@ router.get('/cogs187a', function(req, res) {
   res.render('cogs187a', { title: 'Template' });
 });
 
-/* GET cogs home page. */
-router.get('/home', function(req, res) {
-  res.render('home', { title: 'Home' });
+
+/* GET blog page. */
+router.get('/blog', function(req, res) {
+  res.render('blog', { title: 'Blog' });
 });
 
-/* GET cogs alumni page. */
-router.get('/alumni', function(req, res) {
-  res.render('alumni', { title: 'Alumni & Supporters' });
+/* GET social page. */
+router.get('/social', function(req, res) {
+  res.render('social', { title: 'Social' });
 });
 
-/* GET cogs study page. */
-router.get('/study', function(req, res) {
-  res.render('study', { title: 'Study With Us' });
+/* GET tips page. */
+router.get('/tips', function(req, res) {
+  res.render('tips', { title: 'Tips' });
 });
-
 module.exports = router;
