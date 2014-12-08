@@ -1,5 +1,4 @@
 body {
-	padding-top:50px;
 }
 
 /*fixed top nav*/
@@ -298,7 +297,7 @@ body {
 
 }
 /*CAROUSEL*/
-body { padding-top: 50px; }
+body {  }
 
 #myCarousel .carousel-caption {
     left:0;
