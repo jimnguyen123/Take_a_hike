@@ -1,0 +1,558 @@
+body {
+	padding-top:50px;
+}
+
+/*fixed top nav*/
+.dropdown-large {
+  /*position: static !important;*/
+}
+.dropdown-menu-large {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 20px 0px;
+}
+.dropdown-menu-large > li > ul {
+  padding: 0;
+  margin: 0;
+}
+.dropdown-menu-large > li > ul > li {
+  list-style: none;
+}
+.dropdown-menu-large > li > ul > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: normal;
+}
+.dropdown-menu-large > li ul > li > a:hover,
+.dropdown-menu-large > li ul > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5;
+}
+.dropdown-menu-large .disabled > a,
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+  color: #999999;
+}
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed;
+}
+.dropdown-menu-large .dropdown-header {
+  color: #428bca;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .dropdown-menu-large {
+    margin-left: 0 ;
+    margin-right: 0 ;
+  }
+  .dropdown-menu-large > li {
+    margin-bottom: 30px;
+  }
+  .dropdown-menu-large > li:last-child {
+    margin-bottom: 0;
+  }
+  .dropdown-menu-large .dropdown-header {
+    padding: 3px 15px !important;
+  }
+}
+
+/*end fixed top nav*/
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+
+#masthead {
+	min-height:150px;
+	background-color:#929291;
+  	color:#585857;
+}
+
+#masthead h1 {
+	font-size: 5.5em;
+	text-shadow: 1px 1px 2px rgb(50, 50, 50);
+	line-height: 1;
+	color: white;
+	margin-top: -2px;
+}
+
+#masthead .well {
+	margin-top:25%;
+	background-color:#848584;
+  	border-color:#585857;
+}
+
+.icon-bar {
+	background-color:#fff;
+}
+
+/* hide sidebar sub menus by default */
+#sidebar.nav .nav {
+	display: none;
+    font-size:12px;
+}
+
+/* show sub menu when parent is active */
+#sidebar.nav>.active>ul {
+	display: block;
+}
+
+@media screen and (min-width: 768px) {
+	#masthead h1 {
+		font-size: 5em;
+	}
+}
+
+.navbar-bright {
+	background-color:#D7D7D7;
+    color:#fff;
+}
+  
+.navbar-bright a, #masthead a, #masthead .lead {
+  	color:#585857;
+}
+
+.navbar-bright li > a:hover {
+    background-color:#000033;
+}
+
+.affix-top,.affix{
+	position: static;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+  	margin-top:30px;
+  	width:228px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
+
+#sidebar li.active {
+  	border:0 #eee solid;
+  	border-right-width:4px;
+}
+/*--========NAV SUNMENU TRIAL2=======-->*/
+/*--======NAV SUBMENU======--*/
+.mega-dropdown {
+  position: static !important;
+  /*width:100%;*/
+}
+.mega-dropdown-menu {
+    padding: 20px 20px;
+  /*  width: 100%;*/
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.mega-dropdown-menu:before {
+    content: "";
+    border-bottom: 15px solid #fff;
+    border-right: 17px solid transparent;
+    border-left: 17px solid transparent;
+    position: absolute;
+    top: -15px;
+    /*left: 285px;*/
+    z-index: 10;
+}
+.mega-dropdown-menu:after {
+    content: "";
+    border-bottom: 17px solid #ccc;
+    border-right: 19px solid transparent;
+    border-left: 19px solid transparent;
+    position: absolute;
+    top: -17px;
+    /*left: 283px;*/
+    z-index: 8;
+}
+.mega-dropdown-menu > li > ul {
+  padding: 0;
+  margin: 0;
+}
+.mega-dropdown-menu > li > ul > li {
+  list-style: none;
+}
+.mega-dropdown-menu > li > ul > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #999;
+  white-space: normal;
+}
+.mega-dropdown-menu > li ul > li > a:hover,
+.mega-dropdown-menu > li ul > li > a:focus {
+  text-decoration: none;
+  color: #444;
+  background-color: #f5f5f5;
+}
+.mega-dropdown-menu .dropdown-header {
+  color: #428bca;
+  font-size: 18px;
+  font-weight:bold;
+}
+.mega-dropdown-menu form {
+    margin:3px 20px;
+}
+.mega-dropdown-menu .form-group {
+    margin-bottom: 3px;
+}
+
+    
+    /* FONTS
+    -------------------------------------------------- */ 
+@font-face {
+    font-family: 'gear_proportionregular';
+    src: url('../fonts/gear_proportion-webfont.eot');
+    src: url('../fonts/gear_proportion-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gear_proportion-webfont.woff') format('woff'),
+         url('../fonts/gear_proportion-webfont.ttf') format('truetype'),
+         url('../fonts/gear_proportion-webfont.svg#gear_proportionregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dymoregular';
+    src: url('../fotnts/dymo-webfont.eot');
+    src: url('dymo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dymo-webfont.woff') format('woff'),
+         url('dymo-webfont.ttf') format('truetype'),
+         url('dymo-webfont.svg#dymoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'dymofontinversregular';
+    src: url('../fonts/dymofontinvers-webfont.eot');
+    src: url('../fonts/dymofontinvers-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dymofontinvers-webfont.woff') format('woff'),
+         url('../fonts/dymofontinvers-webfont.ttf') format('truetype'),
+         url('../fonts/dymofontinvers-webfont.svg#dymofontinversregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'impact_label_reversedregular';
+    src: url('impact_label_reversed-webfont.eot');
+    src: url('impact_label_reversed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('impact_label_reversed-webfont.woff') format('woff'),
+         url('impact_label_reversed-webfont.ttf') format('truetype'),
+         url('impact_label_reversed-webfont.svg#impact_label_reversedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'impact_labelregular';
+    src: url('../fonts/impact_label-webfont.eot');
+    src: url('../fonts/impact_label-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/impact_label-webfont.woff') format('woff'),
+         url('i../fonts/mpact_label-webfont.ttf') format('truetype'),
+         url('i../fonts/mpact_label-webfont.svg#impact_labelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'punchlabelregular';
+    src: url('../fonts/punchlabel-regular-webfont.eot');
+    src: url('../fonts/punchlabel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/punchlabel-regular-webfont.woff') format('woff'),
+         url('../fonts/punchlabel-regular-webfont.ttf') format('truetype'),
+         url('../fonts/punchlabel-regular-webfont.svg#punchlabelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*CAROUSEL*/
+body { padding-top: 50px; }
+
+#myCarousel .carousel-caption {
+    left:0;
+	right:0;
+	bottom:0;
+	text-align:left;
+	padding:10px;
+	background:rgba(0,0,0,0.6);
+	text-shadow:none;
+}
+
+#myCarousel .list-group {
+	position:absolute;
+	top:0;
+	right:0;
+}
+#myCarousel .list-group-item {
+	border-radius:0px;
+	cursor:pointer;
+}
+#myCarousel .list-group .active {
+	background-color:#eee;	
+}
+
+@media (min-width: 992px) { 
+	#myCarousel {padding-right:33.3333%;}
+	#myCarousel .carousel-controls {display:none;}
+
+}
+@media (max-width: 991px) { 
+	.carousel-caption p,
+	#myCarousel .list-group {display:none;} 
+}
+/* END CAROUSEL*/
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+   /* Downsize the brand/project name a bit */
+    .navbar-brand {
+			display:block;
+			float: left;
+      /*padding: 16px 20px 16px; /* Increase vertical padding to match navbar links */
+			/*font-size: 5em;*/
+     /* font-family:'gear_proportionregular';*/
+     /* font-weight: 700;*/
+      letter-spacing: 5px;
+      margin: 0;
+      margin-bottom: 3px;
+     /* line-height: 25px;*/
+			color: #fff;
+     /* font-size: 16px;
+      font-weight: bold;*/
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+			height: 50px;
+			padding: 30px 20px 10px;
+    }
+		
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      margin-top: 20px;
+      margin-bottom: 10px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    /*.navbar .brand {
+      /*padding: 16px 20px 16px; /* Increase vertical padding to match navbar links */
+      /*font-size: 48px;*/
+      /*font-family:'gear_proportionregular';
+      font-weight: bolder;
+      letter-spacing: 5px;
+      margin: 0;
+      margin-bottom: 0px;
+      line-height:20px;*/
+     /* font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5); 
+    }*/
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing  {
+      /*text-align: center;*/
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 20;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        /*margin: -20px 0;*/
+      }
+
+      .carousel .item {
+        max-height: 300px;
+      }
+      .carousel img {
+        width: auto;
+        height: auto;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left {
+         display: block;
+        float: left;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+      .featurette-image.pull-right {
+        display: block;
+        float: right;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+      
+      /*.featurette-image.pull-left  {
+        display: block;
+        float: left;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+      .featurette-image.pull-right {
+        display: block;
+        float: right;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }*/ 
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        /*margin: -20px;*/
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        /*height: 300px;*/
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+       /* width: 50%;
+        padding: 0 70px;
+        margin-top: 100px;*/
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+        /*color: rgb(0, 0, 0);*/
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 24px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+		
