@@ -6,6 +6,11 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Index' });
 });
 
+/* GET takeahike page. */
+router.get('/takeahike', function(req, res) {
+  res.render('takeahike', { title: 'Take A Hike' });
+});
+
 /* GET template page. */
 router.get('/template', function(req, res) {
   res.render('template', { title: 'Template' });
