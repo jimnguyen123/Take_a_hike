@@ -7,8 +7,8 @@ router.get('/', function(req, res) {
 });
 
 /* GET takeahike page. */
-router.get('/takeahike', function(req, res) {
-  res.render('takeahike', { title: 'Take A Hike' });
+router.get('/findahike', function(req, res) {
+  res.render('findahike', { title: 'Take A Hike' });
 });
 
 /* GET template page. */
@@ -40,5 +40,10 @@ router.get('/social', function(req, res) {
 /* GET tips page. */
 router.get('/tips', function(req, res) {
   res.render('tips', { title: 'Tips' });
+});
+
+/* GET template page. */
+router.get('/blah', function(req, res) {
+  res.render('blah', { title: 'Blah Page' });
 });
 module.exports = router;
