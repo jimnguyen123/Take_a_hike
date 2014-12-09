@@ -5,46 +5,57 @@
 <form class="controls" id="Filters">
   <!-- We can add an unlimited number of "filter groups" using the following format: -->
   <fieldset>
-    <h4>Shapes</h4>
+		<!--REPLACE SHAPES WITH DIFFICULTY-->
+    <h4>DIFFICULTY</h4>
     <div class="checkbox">
-      <input type="checkbox" value=".square"/>
-      <label>Square</label>
+      <input type="checkbox" value=".easy"/>
+      <!--label>Square</label-->
+			<label><img src="img/filter/1-08.png"> Easy</label>
     </div>
     <div class="checkbox">
-      <input type="checkbox" value=".circle"/>
-      <label>Circle</label>
+      <input type="checkbox" value=".mod"/>
+      <!--label>Circle</label-->
+	    <label><img src="img/filter/1-09.png"> Moderate</label>
+
     </div>
     <div class="checkbox">
-      <input type="checkbox" value=".triangle"/>
-      <label>Triangle</label>
-    </div>
-  </fieldset>
-  
-  <fieldset>
-    <h4>Colours</h4>
-    <div class="checkbox">
-      <input type="checkbox" value=".white"/>
-      <label>White</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".green"/>
-      <label>Green</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".blue"/>
-      <label>Blue</label>
+      <input type="checkbox" value=".hard"/>
+      <!--label>Triangle</label-->
+	    <label><img src="img/filter/1-10.png"> Hard</label>
     </div>
   </fieldset>
   
   <fieldset>
-    <h4>Sizes</h4>
+	<!--REPLACE COLOURS WITH DISTANCE-->
+    <h4>Distance</h4>
     <div class="checkbox">
-      <input type="checkbox" value=".sm"/>
-      <label>Small</label>
+      <input type="checkbox" value=".in"/>
+      <label><img src="img/filter/0-08.png"> Short < 1 mile</label>
     </div>
     <div class="checkbox">
-      <input type="checkbox" value=".lrg"/>
-      <label>Large</label>
+      <input type="checkbox" value=".ft"/>
+      <label><img src="img/filter/0-09.png"> Medium 1 - 3 miles</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" value=".mi"/>
+      <label><img src="img/filter/0-10.png"> Long 3.5+ miles</label>
+    </div>
+  </fieldset>
+  
+  <fieldset>
+	<!--REPLACE SIZES WITH DURATION-->
+    <h4>Duration</h4>
+    <div class="checkbox">
+      <input type="checkbox" value=".sec"/>
+      <label><img src="img/filter/0-07.png"> Short < 1 hour</label>
+    </div>
+		<div class="checkbox">
+      <input type="checkbox" value=".min"/>
+      <label><img src="img/filter/0-06.png"> Medium 1-2 hours</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" value=".hr"/>
+      <label><img src="img/filter/0-05.png"> Long 2.5+ hours</label>
     </div>
   </fieldset>
   
@@ -55,15 +66,15 @@
 <div id="Container" class="container">
   <div class="fail-message"><span>No items were found matching the selected filters</span></div>
   
-  <div class="mix triangle white lrg"></div>
-  <div class="mix square white sm"></div>
-  <div class="mix circle green lrg"></div>
-  <div class="mix triangle blue lrg"></div>
-  <div class="mix square white lrg"></div>
-  <div class="mix circle blue sm"></div>
-  <div class="mix triangle green lrg"></div>
-  <div class="mix square blue lrg"></div>
-  <div class="mix circle white lrg"></div>
+  <div class="mix easy mi hr"><p><img src="/img/grunt.jpeg">Trail Here</br>Easy, farthest, long</p></div>
+  <div class="mix med mi sec"><img src="/img/grunt.jpeg">Trail Here</br>Medium, farthest, short</div>
+  <div class="mix hard in hr"><img src="/img/grunt.jpeg">Trail Here</br>Hard, short, long</div>
+  <div class="mix easy ft hr"><img src="/img/grunt.jpeg">Trail Here</br>Easy, far, long</div>
+  <div class="mix med mi hr"><img src="/img/grunt.jpeg">Trail Here</br>Medium, farthest, long</div>
+  <div class="mix hard ft sec"><img src="/img/grunt.jpeg">Trail Here</br>Hard, far, short</div>
+  <div class="mix easy in hr"><img src="/img/grunt.jpeg">Trail Here</br>Easy, short, long</div>
+  <div class="mix med ft hr"><img src="/img/grunt.jpeg">Trail Here</br>Medium, far, long</div>
+  <div class="mix hard mi hr"><img src="/img/grunt.jpeg">Trail Here</br>Hard, farthest, long</div>
   <div class="gap"></div>
   <div class="gap"></div>
   <div class="gap"></div>
