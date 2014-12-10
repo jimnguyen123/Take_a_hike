@@ -11,6 +11,11 @@ router.get('/findahike', function(req, res) {
   res.render('findahike', { title: 'Take A Hike' });
 });
 
+/* GET hike template page. */
+router.get('/hike_template', function(req, res) {
+  res.render('hike_template', { title: 'Hike Template' });
+});
+
 /* GET template page. */
 router.get('/template', function(req, res) {
   res.render('template', { title: 'Template' });
