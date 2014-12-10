@@ -1,3 +1,35 @@
+.headContent{
+	margin-top: 10px;
+}
+
+.nav-tabs {
+    margin: 0;
+    padding: 0;
+    border: 0;    
+}
+
+.nav-tabs > li > a {
+    padding:9px 15px;
+            display:inline-block;
+            border-radius:3px 3px 0px 0px;
+            background:#7FB5DA;
+            font-size:16px;
+            font-weight:600;
+            color:#4c4c4c;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover {
+   background:#a7cce5;
+   text-decoration:none;
+}
+
+/* Tab Content */
+.tab-pane {
+    border-radius: 0;
+    padding: 10px;
+}
+
 body {
 }
 
