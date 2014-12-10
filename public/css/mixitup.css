@@ -131,16 +131,17 @@ fieldset{
 
 .container .mix,
 .container .gap{
-  width: 100px;
+  /*width: 100px;*/
   display: inline-block;
-  margin: 0 5%;
+  /*margin: 5%;*/
 }
 
 .container .mix{
-  width: 100px;
-  height: 100px;
-  margin: 5%;
-  background: white;
+ /* width: 100px;*/
+  height: 250px;
+	border-radius: 5px;
+  /*margin: 5%;
+  background: white;*/
  display: none;
 }
 
