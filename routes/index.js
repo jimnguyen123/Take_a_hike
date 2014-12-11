@@ -16,6 +16,11 @@ router.get('/hike_template', function(req, res) {
   res.render('hike_template', { title: 'Hike Template' });
 });
 
+/* GET takeahike page. */
+router.get('/social_template', function(req, res) {
+  res.render('social_template', { title: 'Social Template!' });
+});
+
 /* GET template page. */
 router.get('/template', function(req, res) {
   res.render('template', { title: 'Template' });
