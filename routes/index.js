@@ -6,6 +6,16 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Index' });
 });
 
+/* GET header HOME page. */
+router.get('/header2', function(req, res) {
+  res.render('header2', { title: 'home header' });
+});
+
+/* GET footer HOME page. */
+router.get('/footer2', function(req, res) {
+  res.render('/footer2', { title: 'home header' });
+});
+
 /* GET takeahike page. */
 router.get('/findahike', function(req, res) {
   res.render('findahike', { title: 'Take A Hike' });

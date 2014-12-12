@@ -96,12 +96,12 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #5e5e5e;
 }
 
 .navbar-custom .nav li.active {
-    outline: nonte;
-    background-color: rgba(255,255,255,.3);
+    outline: none;
+    background-color: rgba(255,255,255,.1);
 }
 
 .navbar-custom .nav li a {
@@ -114,7 +114,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(100,100,100,.3);
 }
 
 @media(min-width:767px) {
@@ -130,7 +130,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #000;
+        background-color: #D7D7D7;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -145,7 +145,7 @@ a:focus {
     padding: 250px ;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(/img/LOGO/forest-03-02.png) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -190,7 +190,8 @@ a:focus {
     border-radius: 35px;
     font-size: 40px;
     color: #fff;
-    background: 0 0;
+		background-color: #1C231A;
+    /*background: 0 0;*/
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -200,7 +201,7 @@ a:focus {
 .btn-circle:focus {
     outline: 0;
     color: #fff;
-    background: rgba(255,255,255,.1);
+    background-color: #323830;
 }
 
 .btn-circle i.animated {
@@ -271,11 +272,11 @@ a:focus {
     -o-background-size: cover;
 }
 
-#map {
+/*#map {
     width: 100%;
     height: 200px;
     margin-top: 100px;
-}
+}*/
 
 @media(min-width:767px) {
     .content-section {
@@ -286,10 +287,10 @@ a:focus {
         padding: 100px 0;
     }
 
-    #map {
+/*    #map {
         height: 400px;
         margin-top: 250px;
-    }
+    }*/
 }
 
 .btn {
