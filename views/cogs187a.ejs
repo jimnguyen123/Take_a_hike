@@ -1,121 +1,80 @@
-<% include header %>
-<!-- Begin Body -->
-<div class="container">
-	<div class="row">
-  			<div class="col-md-3" id="leftCol">
-              
-              	<ul class="nav nav-stacked" id="sidebar">
-                  <li>
-                    <a href="#sec0">Section 0</a>
-                  	<ul class="nav">
-                      <li class=""><a href="#">- Sub 1</a></li>
-                      <li class=""><a href="#">- Sub 2</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#sec1">Section 1</a>
-                    <ul class="nav">
-                      <li class=""><a href="#">- Sub 1</a></li>
-                      <li class=""><a href="#">- Sub 2</a></li>
-                      <li class=""><a href="#">- Sub 3</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#sec2">Section 2</a></li>
-                  <li><a href="#sec3">Section 3</a></li>
-                  <li><a href="#sec4">Section 4</a></li>
-              	</ul>
-              
-      		</div>  
-      		<div class="col-md-9">
-              	<h2 id="sec0">Content</h2>
-                At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-              	find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-              	
+<% include header2 %>
+<!--script src="/js/mixitup2.js"></script>
+<link rel="stylesheet" href="/css/mixitup2.css"-->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" id="navFix" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Take A</span> Hike
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Download</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="brand-heading">Take A Hike</h1>
+                        <p class="intro-text">Add a tagline here. Plus other stuff and things. Filler filler filler.</p>
+                        <a href="#blah" class="btn btn-circle page-scroll">
+<!--													<i class="glyphicon glyphicon-search">
+-->                            <i class="fa fa-angle-double-down "></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+		
+
+    <!-- About Section -->
+    <section id="blah" class="container-fluid content-section text-center">
+        <div class="row" id="rowFix">
+            <div class="col-sm-8">
+							<h2>Find A Hike</h2>
+							<% include findahike %>
+
+
+               
+            </div>
             
-           
-              	<hr class="col-md-12">
-              	Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-              	Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-              
-              
-              	<h2 id="sec1">Content</h2>
-              	<p>
-                Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut.
-              	</p>
-              	<div class="row">
-                  <div class="col-md-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading"><h3>Hello.</h3></div>
-                      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-                      Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-                      dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-                      Aliquam in felis sit amet augue.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="panel panel-default">
-                      <div class="panel-heading"><h3>Hello.</h3></div>
-                      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-                      Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-                      dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-                      Aliquam in felis sit amet augue.
-                      </div>
-                    </div>
-                  </div>  
-              	</div>
-              
-              	<hr>
-              
-              	<h2 id="sec2">Section 2</h2>
-              	<p>
-                Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	</p>
-              	<div class="row">
-              		<div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
-                  	<div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
-                  	<div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
-              	</div>
-              
-              	<hr>
-              
-              	<h2 id="sec3">Section 3</h2>
-      			Images are responsive sed @mdo but sum are more fun peratis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-              
-              	<h2 id="sec4">Section 4</h2>
-      			Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-              
-              
-              	<hr>
-              <h4><a href="http://bootply.com/75781">Edit on Bootply</a></h4>
-              	<hr>
-              	
-              	
-      		</div> 
-  	</div>
-</div>
-<% include footer %>
+            <div class="col-sm-4" id="rowFix">
+            	<div id="sideBar">
+            		<div id="map-canvas"></div>
+            	</div>
+            </div>
+        </div>
+    </section>
+<% include footer2 %>
+
+  

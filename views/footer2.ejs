@@ -1,17 +1,520 @@
+  <!-- Footer -->
+
+
+	 
+		<script type="text/javascript">
+        
+            function initialize() {
+            	$('#sideBar').affix({
+      				offset: {
+        					top: 580
+      				}
+      			});
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+					 //var myLatlng = new google.maps.LatLng(32.94530135,-117.2121048);
+					var myLatlng = new google.maps.LatLng(32.93406422,-117.06396103);
+               var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 9,
+
+                   // The latitude and longitude to center the map (always required)
+                    center: myLatlng, // Poway
+                    disableDefaultUI: true,
+                    scrollwheel: false,
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [	{		featureType:"all",		elementType:"all",		stylers:[		{			invert_lightness:true		},		{			saturation:10		},		{			lightness:30		},		{			gamma:0.5		},		{			hue:"#009AD4"		}		]	}	]
+                }
+                disableDefaultUI: true
+                
+			
+				
+				var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+				var infowindow = new google.maps.InfoWindow();
+
+				for( var i =0; i < trails.length; i++){
+					var hike = trails[i];
+					var myLatLng = new google.maps.LatLng(hike[1], hike[2]);
+					var marker = new google.maps.Marker({
+						position: myLatLng,
+						map: map,
+						title: hike[0]
+					});
+					google.maps.event.addListener(marker, 'click', (function(mm, tt) {
+    					return function() {
+        					infowindow.setContent(tt);
+        					infowindow.open(map, mm);
+   						}
+					})(marker, hike[3]));
+
+				}
+
+            }
+
+            var trails = [
+					['Mt. Woodson Trail, CA', 33.013972, -116.955385, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName">Mt. Woodson Trail</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-06.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['Cowles Mountain Trail', 32.8078478, -117.03320059999999, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName">Cowles Mountain Trail</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-09.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-09.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-07.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['Bayside Traill', 32.6745224, -117.2395043, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName">Bayside Trail</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-08.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-09.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-06.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['La Jolla Coast Walk Trail', 32.8487571, -117.2682813, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName">La Jolla Coast Walk Trail</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-09.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-08.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-02.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],	
+					
+					
+					['Guy Fleming Trail, CA', 32.9239154, -117.2569755, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">Guy Fleming Trail </a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-08.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-08.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-07.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['San Elijo Lagoon', 33.0140584, -117.25291449999997, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">San Elijo Lagoon </a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-08.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-06.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['Batiquitos Lagoon Trail', 33.0892947, -117.2925942, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">Batiquitos Lagoon Trail </a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-08.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-09.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-06.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['Inaja Memorial Trail', 33.0978894, -116.66675759999998, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">Inaja Memorial Trail</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-08.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-08.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-06.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['Palomar Observatory Trail', 33.0978894, -116.66675759999998, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">Palomar Observatory Trail</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-09.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-05.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['Los Penasquitos Canyon Trail', 32.9411151, -117.13586850000002, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">Los Penasquitos Canyon Trail</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-08.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-05.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['North Shore Lake Hodges Trail', 33.0575366, -117.11832509999999, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">North Shore Lake Hodges Trail</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-09.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-05.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['Discovery Lake and Hills Loop', 33.1272429, -117.17680589999998, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">Discovery Lake and Hills Loop</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-08.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-09.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-07.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['Los Jilgueros Preserve Trail', 33.3594224, -117.2463004, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">Los Jilgueros Preserve Trail</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-08.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-09.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-07.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['Wilderness Gardens Preserve', 33.3243386, -116.96169409999999, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">Wilderness Gardens Preserve</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-08.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-06.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['San Miguel Mountain Trail', 32.98167919999999, -117.02092870000001, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">San Miguel Mountain Trail</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-05.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['Fortuna Mountain', 32.846993, -117.06030829999997, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">Fortuna Mountain</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-05.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['Lawson Peak Trail', 32.7261668, -116.72640899999999, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">Lawson Peak Trail</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-05.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['Cedar Creek Falls to Devils Punchbowl', 32.9951857, -116.75624290000002, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">Cedar Creek Falls to Devils Punchbowl</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-05.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['Three Sisters Falls Trail', 33.0333791, -116.6349826, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">Three Sisters Falls Trail</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-06.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>'],
+					
+					['Iron Mountain Summit Trail', 32.978466, -116.97337340000001, 
+					'<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<a href="#" class="hikeName firstHeading">Iron Mountain Summit Trail</a>'+
+					'<div class="bodyContent">'+
+					'<div class="coolContent">'+
+					'<br><p> Difficulty: </p>' +
+					'<img class="difFix" src="img/filter/1-09.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p> Distance: </p>' +
+					'<img class="disFix" src="img/filter/0-10.png">' +
+					'</div>'+
+					'<div class="coolContent">'+
+					'<p class="difFix"> Duration: </p>' +
+					'<img src="img/filter/0-05.png">' +
+					'</div>'+
+					'</div>' +
+					'</div>']
+					
+					
+
+			];
+			
+			
+            function loadScript() {
+            	var script = document.createElement('script');
+          		script.type = 'text/javascript';
+          		script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyBBjR3MXhPjJImUhQEpD8tyU8yQ4xZ965A&sensor=TRUE_OR_FALSE&callback=initialize";
+          		document.body.appendChild(script);
+            }
+            window.onload = loadScript;
+        </script>
+    <!-- jQuery -->
+    <!--script src="js/jquery.js"></script-->
+	<script src="/js/jquery-1.11.1.min.js"></script>	
+	<script src="/components/mixitup-master/src/jquery.mixitup.js" type="text/javascript"></script>
+<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+		<script src="js/mixitup.js"></script>
+		
+		  <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+	
 
 
 
 <!--////////OLD////////-->
 </body>
-<div class="nav-footer nav-bottom">
-<h6 style="height:3px; background-color:#353535">
-  <p class="pull-right"><a href="#">Back to top</a></p>
-	<p style="color:#282828">2013 Cogs187a . Group Awesome . <a href="#">Privacy</a> . <a href="#">Terms</a></p>
-</h6>
-</div>
+
  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="/js/bootstrap.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
     <script src="/js/bootstrap-transition.js"></script>
     <script src="/js/bootstrap-alert.js"></script>
     <script src="/js/bootstrap-modal.js"></script>

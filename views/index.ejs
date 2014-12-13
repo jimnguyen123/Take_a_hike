@@ -124,7 +124,7 @@
 </form>
 </div>
 
-<div id="About" class="containermix">
+<div id="Container" class="container" style="height:800px">
   <div class="fail-message"><span>No items were found matching the selected filters</span></div>
   
   <div class="mix diff long mid"><img src="/img/MapCropped/MtWoodson_Map.png"></div>
@@ -153,6 +153,17 @@
   <div class="gap"></div>
   <div class="gap"></div>
 </div>
+<script>
+	// On document ready:
+
+$(function(){
+
+	// Instantiate MixItUp:
+
+	$('#Container').mixItUp();
+
+});
+</script>
 
                 <!--<h2>About Grayscale</h2>
                 <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
@@ -179,17 +190,6 @@
             </div>
         </div>
     </section>
-		<script>
-	// On document ready:
-
-$(function(){
-
-	// Instantiate MixItUp:
-
-	$('#About').mixItUp();
-
-});
-</script>
 <% include footer2 %>
 
   
