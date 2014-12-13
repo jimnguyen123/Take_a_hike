@@ -9,8 +9,8 @@
 }
 
 .footerLink{
-  color: #989896;
-  font-size: 11px;
+  color: #989896 !important;
+  font-size: 11px !important;
 }
 
 #myFooter{
