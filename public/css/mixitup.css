@@ -123,6 +123,7 @@ fieldset{
  */
 
 .container{
+  padding: -1%;
  /* padding: 2%;
   min-height: 400px;*/
   /*text-align: justify;*/
@@ -133,7 +134,7 @@ fieldset{
 .container .gap{
   /*width: 100px;*/
   display: inline-block;
-  margin: 1em;
+  /*margin: 1em;*/
 }
 
 .container .mix{
