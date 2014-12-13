@@ -4,13 +4,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<h1>Fortuna Mountain</h1>
+					<h1>Mt. Woodson Trail</h1>
 					
 					<!-- BREADCRUMB -->
 					<ul class="breadcrumb">
 						<li><a href="#">Home</a> <span class="divider">&rarr;</span></li>
 						<li><a href="#">Find A Trail</a><span class="divider">&rarr;</span></li>
-						<li class="active">Fortuna Mountain</li>
+						<li class="active">Mt. Woodson Trail</li>
 					</ul>
 					<!--END: BREADCRUMB -->
 				</div>
@@ -31,21 +31,15 @@
 ================================================== -->
 <div id="myCarousel" class="carousel slide">
   <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
+
+    
+ 
   </ol>
   <div class="carousel-inner">
     <div class="item active">
-      <img src="/img/TrailImages/Batiquitos/Batiquitos3.jpg" style="width:100%" class="img-responsive">
+      <img src="/img/TrailImages/MtWoodson/MtWoodson1.jpg" style="width:100%" class="img-responsive">
     </div>
-    <div class="item">
-      <img src="/img/TrailImages/Batiquitos/Batiquitos2.jpg" class="img-responsive">
-    </div>
-    <div class="item">
-      <img src="/img/TrailImages/Batiquitos/Batiquitos1.jpg" class="img-responsive">
-    </div>
+    
   </div>
   <!-- Controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -57,7 +51,7 @@
 </div>
 <!-- /.carousel -->
 		
-		<h2 class=""><a href="#"></a></h2> 
+		<h2 class=""><a href="#"></a></h2>
 			<!--p class=" clearfix">
 				<i class="fa-icon-comment"></i>
 				<a href="#">3 Comments</a>
@@ -69,22 +63,19 @@
 				<a href="#"><span class="label label-info">UI</span></a> 
 				<a href="#"><span class="label label-info">growth</span></a>
 			</p-->
-		<p class="lead">The trail is equipped with several maps
-		throughout the pathway. </p>
-		<p class="">
-		    There are hills and some steep passages on
-		the path and be aware it is not very shaded. It is a difficult
-		trail with two paths that lead up to the summit. Be advised on
-		the trails ahead of time and map out your hike, people tend to
-		get confused on trail names and end up going a way they didn't
-		mean to. It is a great hiking trail and recommended for trail
-		runners. There is a waterfall to see only the way. Also dogs are allowed on a leash. There is a parking lot close the trial and it is free. </p>
+		<p class="lead">Mt. Woodson Trail is a branch off from Lake Poway. It is a 7.8 miles hike out and back filled with lots of beautiful scenery. </p>
+		<p class="">From the vast views of surrounding mountains and overall distance views, to  seeing the lake, the most popular attraction of Mt. Woodson Trail is the iconic Potato Chip Rock.
+		This is a popular place for people to go out and take pictures on. It is a rewarding and fun aspect of the hike, since it is at the end and on top of the step mountain. This hike is fairly challenging but one of the easiest of the difficult trails around. The paths are very well maintained and keep the hike enjoyable and safe. They do allow dogs on the trails as well. 
+</p>
+                <p class="">This trail is good for hiking, walking, dog walking, moutain biking, and equestrian. Mt. Woodson has beutiful scenery including the Poway Lake, excellent views, and the famous Potato Chip Rock. This well packed dirt trial is ideal during Spetmeber to May. Also keep in mind that there is a parking fee of $5.
 		    
+		</p> 
 		    <p class="">
-		    Address- Fortuna Mountain San Diego, CA 92124
+		    Address- Mt Woodson Trail, Poway, CA 92064
 
-                </p>
-                
+ </p>
+		
+		
 <!--/ article-->
 
 
@@ -105,30 +96,32 @@
         <tbody>
             <tr>
                 <td><img src="/img/filter-lg/0-08.png"></td>
-                <td><h4>Difficult</h4></td>
+                <td><h4>difficult</h4></td>
             </tr>
 						<tr>
                 <td><img src="/img/filter-lg/0-05.png"></td>
-                <td><h4>6.5 mi</h4></td>
+                <td><h4>7.8 mi</h4></td>
             </tr>
             <tr>
-                <td><img src="/img/filter-lg/0-11.png"></td>
-                <td><h4>3 hr</h4></td>
+                <td><img src="/img/filter-lg/0-10.png"></td>
+                <td><h4>2.5 hr</h4></td>
             </tr>
         </tbody>
     </table>
 	<div>
 		 <h4>Trail</hs4>
 			<hr>
-			<img src="/img/MapSimple.png">
+			<img src="/img/MapSimpleTraced/MtWoodson_Map-02.png"   style="width:218px">
 	</div>
 		</br>
 	<div>
 		<h4>Activities</hs4>
 			<hr>
 			<img src="/img/icons/activity/hiker.png">
-			      <img src="/img/icons/activity/runner1.png">
-					<img src="/img/icons/activity/dog1.png">
+			      <img src="/img/icons/activity/walk1.png">
+<img src="/img/icons/activity/dog1.png">	
+	
+	
 	</div>
 		</br>
 <h4>Weather</h4>
@@ -173,9 +166,9 @@
 	   <div class="col-sm-4 col-xs-6">
       
         <div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="/hike16"><img src="/img/TrailFilter/SanMiguel3.jpg" class="img-responsive"></a></div>
+          <div class="panel-thumbnail"><a href="#"><img src="/img/TrailImages/Batiquitos/Batiquitos3.jpg" class="img-responsive"></a></div>
           <div class="panel-body">
-            <p>San Miguel Mountain Trail</p>
+            <p> Palomar Observatory Trail</p>
             <p></p>
 
           </div>
@@ -185,9 +178,9 @@
       <div class="col-sm-4 col-xs-6">
       
       	<div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="/hike17"><img src="/img/TrailFilter/Lawson2.jpg" class="img-responsive"></a></div>
+          <div class="panel-thumbnail"><a href="#"><img src="/img/TrailImages/Batiquitos/Batiquitos3.jpg" class="img-responsive"></a></div>
           <div class="panel-body">
-            <p>Lawson Peak Trail</p>
+            <p>Three Sisters Waterfall Trail</p>
             <p></p>
             
           </div>
@@ -197,9 +190,9 @@
       <div class="col-sm-4 col-xs-6">
       
       	<div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="/hike18" title="Interiors"><img src="/img/TrailFilter/CedarCreek1.jpg" class="img-responsive"></a></div>
+          <div class="panel-thumbnail"><a href="#" title="Interiors"><img src="/img/TrailImages/Batiquitos/Batiquitos3.jpg" class="img-responsive"></a></div>
           <div class="panel-body">
-            <p>Cedar Creek Falls to Devil's Punchbowl</p>
+            <p>Iron Mountain Summit Trail</p>
             <p></p>
             
           </div>

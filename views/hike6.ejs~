@@ -4,13 +4,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<h1>Fortuna Mountain</h1>
+					<h1>San Elijo Lagoon Trail</h1>
 					
 					<!-- BREADCRUMB -->
 					<ul class="breadcrumb">
 						<li><a href="#">Home</a> <span class="divider">&rarr;</span></li>
 						<li><a href="#">Find A Trail</a><span class="divider">&rarr;</span></li>
-						<li class="active">Fortuna Mountain</li>
+						<li class="active">San Elijo Lagoon Trail</li>
 					</ul>
 					<!--END: BREADCRUMB -->
 				</div>
@@ -33,19 +33,13 @@
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
+   
   </ol>
   <div class="carousel-inner">
     <div class="item active">
-      <img src="/img/TrailImages/Batiquitos/Batiquitos3.jpg" style="width:100%" class="img-responsive">
+      <img src="/img/TrailImages/SanElijo/SanElijo1.jpg" style="width:100%" class="img-responsive">
     </div>
-    <div class="item">
-      <img src="/img/TrailImages/Batiquitos/Batiquitos2.jpg" class="img-responsive">
-    </div>
-    <div class="item">
-      <img src="/img/TrailImages/Batiquitos/Batiquitos1.jpg" class="img-responsive">
-    </div>
+    
   </div>
   <!-- Controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -55,9 +49,9 @@
     <span class="icon-next"></span>
   </a>  
 </div>
-<!-- /.carousel -->
+<!-- /.carousel --> 
 		
-		<h2 class=""><a href="#"></a></h2> 
+		<h2 class=""><a href="#"></a></h2>
 			<!--p class=" clearfix">
 				<i class="fa-icon-comment"></i>
 				<a href="#">3 Comments</a>
@@ -69,22 +63,21 @@
 				<a href="#"><span class="label label-info">UI</span></a> 
 				<a href="#"><span class="label label-info">growth</span></a>
 			</p-->
-		<p class="lead">The trail is equipped with several maps
-		throughout the pathway. </p>
+		<p class="lead">The trails here are part of an ecological preserve which give you a great look at all the natural beauty there is by the lagoon.
+		
+		</p>
+		
+		<p class="">On the trails are allows leashed dogs. It is a great easy walk for families. It is advised to go on this trail in early summer or late spring since the trail is very exposed to the sun and can get very hot. It has well kept paths and a great visitor center for any questions and fun activities for children. There are a few benches that are ideal to take a break and watch the birds.
+The lagoon is a great place to walk, run, bird watch, take your dog for a walk, and there are even equestrian trials. The lagoon trials are open all year long, free to access, and are open from9am-5pm. 
+		
+		
+		</p>
 		<p class="">
-		    There are hills and some steep passages on
-		the path and be aware it is not very shaded. It is a difficult
-		trail with two paths that lead up to the summit. Be advised on
-		the trails ahead of time and map out your hike, people tend to
-		get confused on trail names and end up going a way they didn't
-		mean to. It is a great hiking trail and recommended for trail
-		runners. There is a waterfall to see only the way. Also dogs are allowed on a leash. There is a parking lot close the trial and it is free. </p>
-		    
-		    <p class="">
-		    Address- Fortuna Mountain San Diego, CA 92124
+		Address- San Elijo Lagoon Encinitas, CA 92024
 
-                </p>
-                
+</p>
+		
+				
 <!--/ article-->
 
 
@@ -104,16 +97,16 @@
 		<table class="table">
         <tbody>
             <tr>
-                <td><img src="/img/filter-lg/0-08.png"></td>
-                <td><h4>Difficult</h4></td>
+                <td><img src="/img/filter-lg/0-06.png"></td>
+                <td><h4>Easy</h4></td>
             </tr>
 						<tr>
                 <td><img src="/img/filter-lg/0-05.png"></td>
-                <td><h4>6.5 mi</h4></td>
+                <td><h4>6.7 mi</h4></td>
             </tr>
             <tr>
-                <td><img src="/img/filter-lg/0-11.png"></td>
-                <td><h4>3 hr</h4></td>
+                <td><img src="/img/filter-lg/0-10.png"></td>
+                <td><h4>2.5 hr</h4></td>
             </tr>
         </tbody>
     </table>
@@ -127,8 +120,11 @@
 		<h4>Activities</hs4>
 			<hr>
 			<img src="/img/icons/activity/hiker.png">
-			      <img src="/img/icons/activity/runner1.png">
-					<img src="/img/icons/activity/dog1.png">
+			      <img src="/img/icons/activity/walk1.png">
+					<img src="/img/icons/activity/runner1.png">
+						  <img src="/img/icons/activity/dog1.png">
+							    <img src="/img/icons/activity/equestrian.png">
+								      <img src="/img/icons/activity/hiker.png">
 	</div>
 		</br>
 <h4>Weather</h4>
@@ -173,9 +169,9 @@
 	   <div class="col-sm-4 col-xs-6">
       
         <div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="/hike16"><img src="/img/TrailFilter/SanMiguel3.jpg" class="img-responsive"></a></div>
+          <div class="panel-thumbnail"><a href="#"><img src="/img/TrailImages/Batiquitos/Batiquitos3.jpg" class="img-responsive"></a></div>
           <div class="panel-body">
-            <p>San Miguel Mountain Trail</p>
+            <p>Cowles Mountain Trail</p>
             <p></p>
 
           </div>
@@ -185,9 +181,9 @@
       <div class="col-sm-4 col-xs-6">
       
       	<div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="/hike17"><img src="/img/TrailFilter/Lawson2.jpg" class="img-responsive"></a></div>
+          <div class="panel-thumbnail"><a href="#"><img src="/img/TrailImages/Batiquitos/Batiquitos3.jpg" class="img-responsive"></a></div>
           <div class="panel-body">
-            <p>Lawson Peak Trail</p>
+            <p>Bayside Trail</p>
             <p></p>
             
           </div>
@@ -197,9 +193,9 @@
       <div class="col-sm-4 col-xs-6">
       
       	<div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="/hike18" title="Interiors"><img src="/img/TrailFilter/CedarCreek1.jpg" class="img-responsive"></a></div>
+          <div class="panel-thumbnail"><a href="#" title="Interiors"><img src="/img/TrailImages/Batiquitos/Batiquitos3.jpg" class="img-responsive"></a></div>
           <div class="panel-body">
-            <p>Cedar Creek Falls to Devil's Punchbowl</p>
+            <p>Guy Fleming Trail</p>
             <p></p>
             
           </div>
