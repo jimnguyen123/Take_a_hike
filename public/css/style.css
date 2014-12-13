@@ -249,12 +249,13 @@ body {
 }
 
 .navbar-bright {
-	background-color:#D7D7D7;
+	/*background-color:#D7D7D7;*/
+	background-color: #353E46;
     color:#fff;
 }
   
 .navbar-bright a, #masthead a, #masthead .lead {
-  	color:#585857;
+  	color:#989896;
 }
 
 .navbar-bright li > a:hover {
