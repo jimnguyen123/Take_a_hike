@@ -1,0 +1,62 @@
+body {
+  padding-top: 50px;
+  
+}
+ 
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+    width: 400px;
+    height:300px;
+    
+}
+ 
+.caption {
+    position:absolute;
+    top:-100%;
+    right:0;
+    background:rgba(66, 139, 100, 0.85);
+    width:400px;
+    height:300px;
+    padding:2%;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.thumbnail:hover .caption {
+    top:0%;
+   
+}
+
+IMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+ 
+    
+    
+    
+    
+    a:link {
+    color: #FFF;
+}
+
+/* visited link */
+a:visited {
+    color: #FFF;
+}
+    
+    
+    
+    a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
