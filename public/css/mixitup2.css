@@ -137,7 +137,7 @@ fieldset{
 }
 
 .containermix .mix{
- /* width: 100px;*/
+  max-width: 33.3%;
   height: 250px;
 	border-radius: 5px;
   /*margin: 5%;
