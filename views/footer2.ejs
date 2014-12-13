@@ -5,9 +5,10 @@
 		<script type="text/javascript">
         
             function initialize() {
+            	document.getElementById("map-canvas").style.height=  $('.intro').height() + "px";
             	$('#sideBar').affix({
       				offset: {
-        					top: 580
+        					top: $('.intro').height() + 20
       				}
       			});
                 // Basic options for a simple Google Map
